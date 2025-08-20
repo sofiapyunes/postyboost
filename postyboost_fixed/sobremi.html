@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sofía Pérez - Community Manager</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f9f9f9; color: #333; }
+header { text-align: center; padding: 50px 20px; background: linear-gradient(135deg, #896dfa, #120b8f, #6f55e0); color: white; }
+header h1 { font-size: 3rem; color: #fff02d; }
+header p { font-size: 1.2rem; }
+nav { display: flex; justify-content: center; gap: 20px; background: #896dfa; padding: 1rem; }
+nav a { color: white; font-weight: bold; text-decoration: none; }
+nav a:hover { background: #7159d1; padding: 5px 10px; border-radius: 6px; }
+.menu-toggle { display: none; }
+@media (max-width: 768px) {
+  .menu-toggle { display: block; background: none; border: none; font-size: 28px; color: white; cursor: pointer; }
+  nav { display: none; flex-direction: column; }
+  nav.active { display: flex; }
+}
+.sobre-mi { max-width: 1000px; margin: 50px auto; display: flex; flex-wrap: wrap; gap: 30px; align-items: center; padding: 20px; }
+.sobre-mi .foto { flex: 1 1 300px; text-align: center; }
+.sobre-mi .foto img { width: 250px; height: 250px; border-radius: 50%; object-fit: cover; border: 4px solid #fff; }
+.sobre-mi .info { flex: 2 1 500px; }
+footer { background: #120b8f; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+.btn-whatsapp-premium { position: fixed; width: 70px; height: 70px; bottom: 25px; right: 25px; border-radius: 50%; background: linear-gradient(135deg, #896dfa, #120b8f); display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 25px rgba(0,0,0,0.4); cursor: pointer; }
+.btn-whatsapp-premium img { max-width: 50%; }
+</style>
+</head>
+<body>
+<header>
+  <button class="menu-toggle" onclick="document.getElementById('miNav').classList.toggle('active')">☰</button>
+  <h1>Sobre mí</h1>
+  <p>Community Manager • Diseño Web • Negocios Digitales</p>
+</header>
+<nav id="miNav">
+  <a href="index.html">Inicio</a>
+  <a href="sobremi.html">Sobre mí</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+<section class="sobre-mi">
+  <div class="foto"><img src="imagenes/foto-sofia.png" alt="Sofía Pérez"></div>
+  <div class="info">
+    <h2>¡Hola! Soy Sofía Pérez Yunes</h2>
+    <p>Ayudo a negocios a crecer digitalmente combinando creatividad y estrategia. Estudio <strong>Negocios Digitales en UADE</strong> y tengo conocimientos en <strong>Python, Adobe Suite, diseño web y Google Ads</strong>.</p>
+  </div>
+</section>
+<footer>
+  <p>Conectemos ✨ | <a href="mailto:sofiapyunes@gmail.com" style="color:white;">📧 Gmail</a> | <a href="https://instagram.com/postyboost" target="_blank" style="color:white;">📸 Instagram</a></p>
+  <p>© 2025 Posty Boost - Todos los derechos reservados</p>
+</footer>
+<a href="https://wa.me/5493624285870" class="btn-whatsapp-premium" target="_blank"><img src="imagenes/digital-glyph-white.png" alt="WhatsApp"></a>
+</body>
+</html>
